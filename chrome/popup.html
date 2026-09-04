@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon32.png" alt="" width="24" height="24">
+    <h1>peek</h1>
+    <span id="help" tabindex="0" role="note" aria-label="what is this?">?
+      <span id="helpbox">peek blocks the one request guns.lol uses to count a profile view. Profiles load normally, the counter just never moves, so they will not know you visited.</span>
+    </span>
+  </header>
+
+  <button id="power" aria-pressed="true" aria-label="toggle view blocking">
+    <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
+      <path d="M12 3v8"/>
+      <path d="M6.3 6.5a8 8 0 1 0 11.4 0"/>
+    </svg>
+  </button>
+  <p id="state">views not counted</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
